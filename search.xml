@@ -23,10 +23,6 @@
 </thead>
 <tbody>
 <tr>
-<td>Ada</td>
-<td style="text-align:center">ada</td>
-</tr>
-<tr>
 <td>ARM assembler</td>
 <td style="text-align:center">armasm, arm</td>
 </tr>
@@ -41,10 +37,6 @@
 <tr>
 <td>AppleScript</td>
 <td style="text-align:center">applescript, osascript</td>
-</tr>
-<tr>
-<td>AsciiDoc</td>
-<td style="text-align:center">asciidoc, adoc</td>
 </tr>
 <tr>
 <td>AutoHotkey</td>

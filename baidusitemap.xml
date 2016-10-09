@@ -3,8 +3,30 @@
 
     
   <url>
+    <loc>http://blog.kidoplay.com/2016/10/09/C-%E6%B1%89%E5%AD%97%E8%BD%AC%E6%8B%BC%E9%9F%B3/</loc>
+    <lastmod>2016-10-09T17:00:39.853Z</lastmod>
+    <data>
+        <display>
+        <title>C# 汉字转拼音</title>
+        <pubTime>2016-10-09T11:15:23.000Z</pubTime>
+        
+        <tag>CSharp </tag>
+         
+        <tag>Programming </tag>
+         
+         
+           
+             
+              <breadCrumb title="Coding" url="http://blog.kidoplay.com/categories/Coding/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.kidoplay.com/2016/10/10/Highlight-Js-%E6%8C%87%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</loc>
-    <lastmod>2016-10-09T16:48:38.946Z</lastmod>
+    <lastmod>2016-10-09T17:00:24.281Z</lastmod>
     <data>
         <display>
         <title>Highlight-Js 指定代码高亮</title>
@@ -14,23 +36,9 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.kidoplay.com/2016/10/09/C-%E6%B1%89%E5%AD%97%E8%BD%AC%E6%8B%BC%E9%9F%B3/</loc>
-    <lastmod>2016-10-09T16:27:43.651Z</lastmod>
-    <data>
-        <display>
-        <title>C# 汉字转拼音</title>
-        <pubTime>2016-10-09T11:15:23.000Z</pubTime>
-        
-        <tag>CSharp, Programming </tag>
-         
-         
-           
+             
+              <breadCrumb title="Blog" url="http://blog.kidoplay.com/categories/Blog/"/>
+          
         </display>
     </data>
     </url>
