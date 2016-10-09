@@ -129,6 +129,35 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2016/10/09/C-汉字转拼音/" >C# 汉字转拼音</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2016-10-09  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>首先引用一下微软的库<br>Microsoft.International.Converters.PinYinConverter<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> Microsoft.International.Converters.PinYinConverter;</div><div class="line"></div><div class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">string</span> 拼音首字母(<span class="keyword">string</span> str)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">string</span> r = <span class="keyword">string</span>.Empty;</div><div class="line">            <span class="keyword">if</span> (str == <span class="literal">null</span>)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">foreach</span> (<span class="keyword">char</span> obj <span class="keyword">in</span> str)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    ChineseChar cChar = <span class="keyword">new</span> ChineseChar(obj);</div><div class="line">                    <span class="keyword">string</span> t = cChar.Pinyins[<span class="number">0</span>].ToString();</div><div class="line">                    r += t.Substring(<span class="number">0</span>, <span class="number">1</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span></div><div class="line">                &#123;</div><div class="line">                    r += obj.ToString();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> r;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">string</span> 拼音全拼(<span class="keyword">string</span> str)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">string</span> r = <span class="keyword">string</span>.Empty;</div><div class="line">            <span class="keyword">if</span> (str == <span class="literal">null</span>)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">foreach</span> (<span class="keyword">char</span> obj <span class="keyword">in</span> str)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    ChineseChar chineseChar = <span class="keyword">new</span> ChineseChar(obj);</div><div class="line">                    <span class="keyword">string</span> t = chineseChar.Pinyins[<span class="number">0</span>].ToString();</div><div class="line">                    r += t.Substring(<span class="number">0</span>, t.Length - <span class="number">1</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span></div><div class="line">                &#123;</div><div class="line">                    r += obj.ToString();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> r;</div></pre></td></tr></table></figure></p>
+<p>但是这种方法有多音字的问题<br>尚未解决</p>
+
+	
+	</div>
+  <a type="button" href="/2016/10/09/C-汉字转拼音/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2016/10/09/hello-world/" >Hello World</a>
 		</h3>
 		</div>
@@ -200,6 +229,10 @@ var _hmt = _hmt || [];
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2016/10/09/C-汉字转拼音/" ><i class="fa fa-file-o"></i>C# 汉字转拼音</a>
+      </li>
     
       <li>
         <a href="/2016/10/09/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
