@@ -4,6 +4,271 @@
   
     
     <entry>
+      <title><![CDATA[Highlight-Js 指定代码高亮]]></title>
+      <url>http://blog.kidoplay.com/2016/10/10/Highlight-Js-%E6%8C%87%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+      <content type="html"><![CDATA[<h1 id="Highlight-js-指定代码高亮"><a href="#Highlight-js-指定代码高亮" class="headerlink" title="Highlight.js 指定代码高亮"></a>Highlight.js 指定代码高亮</h1><h2 id="0x0-前言"><a href="#0x0-前言" class="headerlink" title="0x0 前言"></a>0x0 前言</h2><p>最近刚刚换到hexo, 发现页面载入效率不理想, 于是寻遍各种优化方法。<br><a href="https://hexo.io/news/" target="_blank" rel="external">官网</a> 提示了一句</p>
+<blockquote>
+<p>Lazy load language files of highlight.js<br>highlight.js is slow. Especially when it try to detect the language. Lazy load language files make processing faster and don’t have to load bunch of unused language files. However there’re some limitations:</p>
+<p>Auto detect must be disabled.<br>You have to specify language in code block.<br>You can set auto detect disabled in _config.yml.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">highlight:</div><div class="line">  auto_detect: false</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<a id="more"></a>
+<p>于是照做，但是有些记不得具体应该用什么标识符, 就在此记录一下自己可能会用到的</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th style="text-align:center">Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARM assembler</td>
+<td style="text-align:center">armasm, arm</td>
+</tr>
+<tr>
+<td>ActionScript</td>
+<td style="text-align:center">actionscript, as</td>
+</tr>
+<tr>
+<td>Apache</td>
+<td style="text-align:center">apache, apacheconf</td>
+</tr>
+<tr>
+<td>AppleScript</td>
+<td style="text-align:center">applescript, osascript</td>
+</tr>
+<tr>
+<td>AutoHotkey</td>
+<td style="text-align:center">autohotkey</td>
+</tr>
+<tr>
+<td>AutoIt</td>
+<td style="text-align:center">autoit</td>
+</tr>
+<tr>
+<td>Bash</td>
+<td style="text-align:center">bash, sh, zsh</td>
+</tr>
+<tr>
+<td>Basic</td>
+<td style="text-align:center">basic</td>
+</tr>
+<tr>
+<td>C#</td>
+<td style="text-align:center">cs, csharp</td>
+</tr>
+<tr>
+<td>C++</td>
+<td style="text-align:center">cpp, c, cc, h, c++, h++, hpp</td>
+</tr>
+<tr>
+<td>CMake</td>
+<td style="text-align:center">cmake, cmake.in</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td style="text-align:center">css</td>
+</tr>
+<tr>
+<td>CoffeeScript</td>
+<td style="text-align:center">coffeescript, coffee, cson, iced</td>
+</tr>
+<tr>
+<td>DNS Zone file</td>
+<td style="text-align:center">dns, zone, bind</td>
+</tr>
+<tr>
+<td>DOS</td>
+<td style="text-align:center">dos, bat, cmd</td>
+</tr>
+<tr>
+<td>Dart</td>
+<td style="text-align:center">dart</td>
+</tr>
+<tr>
+<td>Delphi</td>
+<td style="text-align:center">delphi, dpr, dfm, pas, pascal, freepascal,lazarus,lpr, lfm</td>
+</tr>
+<tr>
+<td>Django</td>
+<td style="text-align:center">django, jinja</td>
+</tr>
+<tr>
+<td>Dockerfile</td>
+<td style="text-align:center">dockerfile, docker</td>
+</tr>
+<tr>
+<td>Dust</td>
+<td style="text-align:center">dust, dst</td>
+</tr>
+<tr>
+<td>Erlang</td>
+<td style="text-align:center">erlang, erl</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td style="text-align:center">excel, xls, xlsx</td>
+</tr>
+<tr>
+<td>F#</td>
+<td style="text-align:center">fsharp, fs</td>
+</tr>
+<tr>
+<td>Fortran</td>
+<td style="text-align:center">fortran, f90, f95</td>
+</tr>
+<tr>
+<td>Go</td>
+<td style="text-align:center">go, golang</td>
+</tr>
+<tr>
+<td>Gradle</td>
+<td style="text-align:center">gradle</td>
+</tr>
+<tr>
+<td>Groovy</td>
+<td style="text-align:center">groovy</td>
+</tr>
+<tr>
+<td>HTML, XML</td>
+<td style="text-align:center">xml, html, xhtml, rss, atom, xjb, xsd, xsl, plist</td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td style="text-align:center">http, https</td>
+</tr>
+<tr>
+<td>Haskell</td>
+<td style="text-align:center">haskell, hs</td>
+</tr>
+<tr>
+<td>Ini</td>
+<td style="text-align:center">ini</td>
+</tr>
+<tr>
+<td>JSON</td>
+<td style="text-align:center">json</td>
+</tr>
+<tr>
+<td>Java</td>
+<td style="text-align:center">java, jsp</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td style="text-align:center">javascript, js, jsx</td>
+</tr>
+<tr>
+<td>Lisp</td>
+<td style="text-align:center">lisp</td>
+</tr>
+<tr>
+<td>Lua</td>
+<td style="text-align:center">lua</td>
+</tr>
+<tr>
+<td>Makefile</td>
+<td style="text-align:center">makefile, mk, mak</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td style="text-align:center">markdown, md, mkdown, mkd</td>
+</tr>
+<tr>
+<td>Mathematica</td>
+<td style="text-align:center">mathematica, mma</td>
+</tr>
+<tr>
+<td>Matlab</td>
+<td style="text-align:center">matlab</td>
+</tr>
+<tr>
+<td>Moonscript</td>
+<td style="text-align:center">moonscript, moon</td>
+</tr>
+<tr>
+<td>NSIS</td>
+<td style="text-align:center">nsis</td>
+</tr>
+<tr>
+<td>Nginx</td>
+<td style="text-align:center">nginx, nginxconf</td>
+</tr>
+<tr>
+<td>Objective C</td>
+<td style="text-align:center">objectivec, mm, objc, obj-c</td>
+</tr>
+<tr>
+<td>Oxygene</td>
+<td style="text-align:center">oxygene</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td style="text-align:center">php, php3, php4, php5, php6</td>
+</tr>
+<tr>
+<td>Python</td>
+<td style="text-align:center">python, py, gyp</td>
+</tr>
+<tr>
+<td>Python profiler results</td>
+<td style="text-align:center">profile</td>
+</tr>
+<tr>
+<td>QML</td>
+<td style="text-align:center">qml</td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td style="text-align:center">ruby, rb, gemspec, podspec, thor, irb</td>
+</tr>
+<tr>
+<td>Rust</td>
+<td style="text-align:center">rust, rs</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td style="text-align:center">sql</td>
+</tr>
+<tr>
+<td>Scala</td>
+<td style="text-align:center">scala</td>
+</tr>
+<tr>
+<td>Smali</td>
+<td style="text-align:center">smali</td>
+</tr>
+<tr>
+<td>Swift</td>
+<td style="text-align:center">swift</td>
+</tr>
+<tr>
+<td>TypeScript</td>
+<td style="text-align:center">typescript, ts</td>
+</tr>
+<tr>
+<td>VB.Net</td>
+<td style="text-align:center">vbnet, vb</td>
+</tr>
+<tr>
+<td>VBScript</td>
+<td style="text-align:center">vbscript, vbs</td>
+</tr>
+<tr>
+<td>Vim Script</td>
+<td style="text-align:center">vim</td>
+</tr>
+<tr>
+<td>x86 Assembly</td>
+<td style="text-align:center">x86asm</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[C# 汉字转拼音]]></title>
       <url>http://blog.kidoplay.com/2016/10/09/C-%E6%B1%89%E5%AD%97%E8%BD%AC%E6%8B%BC%E9%9F%B3/</url>
       <content type="html"><![CDATA[<p>首先引用一下微软的库<br>Microsoft.International.Converters.PinYinConverter<br><a id="more"></a><br><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> Microsoft.International.Converters.PinYinConverter;</div><div class="line"></div><div class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">string</span> 拼音首字母(<span class="keyword">string</span> str)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">string</span> r = <span class="keyword">string</span>.Empty;</div><div class="line">            <span class="keyword">if</span> (str == <span class="literal">null</span>)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">foreach</span> (<span class="keyword">char</span> obj <span class="keyword">in</span> str)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    ChineseChar cChar = <span class="keyword">new</span> ChineseChar(obj);</div><div class="line">                    <span class="keyword">string</span> t = cChar.Pinyins[<span class="number">0</span>].ToString();</div><div class="line">                    r += t.Substring(<span class="number">0</span>, <span class="number">1</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span></div><div class="line">                &#123;</div><div class="line">                    r += obj.ToString();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> r;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">string</span> 拼音全拼(<span class="keyword">string</span> str)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">string</span> r = <span class="keyword">string</span>.Empty;</div><div class="line">            <span class="keyword">if</span> (str == <span class="literal">null</span>)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">foreach</span> (<span class="keyword">char</span> obj <span class="keyword">in</span> str)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    ChineseChar chineseChar = <span class="keyword">new</span> ChineseChar(obj);</div><div class="line">                    <span class="keyword">string</span> t = chineseChar.Pinyins[<span class="number">0</span>].ToString();</div><div class="line">                    r += t.Substring(<span class="number">0</span>, t.Length - <span class="number">1</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span></div><div class="line">                &#123;</div><div class="line">                    r += obj.ToString();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> r;</div></pre></td></tr></table></figure></p>
