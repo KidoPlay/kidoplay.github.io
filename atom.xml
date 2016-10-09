@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.kidoplay.com/"/>
-  <updated>2016-10-09T16:45:06.808Z</updated>
+  <updated>2016-10-09T16:48:38.946Z</updated>
   <id>http://blog.kidoplay.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.kidoplay.com/2016/10/10/Highlight-Js-%E6%8C%87%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/"/>
     <id>http://blog.kidoplay.com/2016/10/10/Highlight-Js-指定代码高亮/</id>
     <published>2016-10-09T16:26:56.000Z</published>
-    <updated>2016-10-09T16:45:06.808Z</updated>
+    <updated>2016-10-09T16:48:38.946Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Highlight-js-指定代码高亮"><a href="#Highlight-js-指定代码高亮" class="headerlink" title="Highlight.js 指定代码高亮"></a>Highlight.js 指定代码高亮</h1><h2 id="0x0-前言"><a href="#0x0-前言" class="headerlink" title="0x0 前言"></a>0x0 前言</h2><p>最近刚刚换到hexo, 发现页面载入效率不理想, 于是寻遍各种优化方法。<br><a href="https://hexo.io/news/" target="_blank" rel="external">官网</a> 提示了一句</p>
 <blockquote>
@@ -33,9 +33,8 @@
 <table>
 <thead>
 <tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
+<th>Language</th>
+<th style="text-align:center">Aliases</th>
 </tr>
 </thead>
 <tbody>
