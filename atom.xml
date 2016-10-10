@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.kidoplay.com/"/>
-  <updated>2016-10-10T06:46:49.919Z</updated>
+  <updated>2016-10-10T06:49:10.913Z</updated>
   <id>http://blog.kidoplay.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.kidoplay.com/2016/10/10/MarkdownPad-2-Pro-%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95/"/>
     <id>http://blog.kidoplay.com/2016/10/10/MarkdownPad-2-Pro-破解记录/</id>
     <published>2016-10-09T21:44:06.000Z</published>
-    <updated>2016-10-10T06:46:49.919Z</updated>
+    <updated>2016-10-10T06:49:10.913Z</updated>
     
     <content type="html"><![CDATA[<h2 id="0x0-前言"><a href="#0x0-前言" class="headerlink" title="0x0 前言"></a>0x0 前言</h2><p>为了现在这个破博客，找了一天的win下可视化MD编辑器，终于在知乎提示下找到一个看起来不错的，也就是MarkdownPad。</p>
 <p>去官网看了一下，有两个版本。</p>
@@ -52,8 +52,10 @@
 <p>如果不成功就用 LicenseEngine 进行第二次认证</p>
 <p>因为 LicenseEngine 是主程序里的模块</p>
 <p>而 mod 是 Markdown.Async 中的模块</p>
-<p>考虑了一下就去patch Markdown.Async</p>
-<h2 id="0x3-替换原程序公钥并写注册机"><a href="#0x3-替换原程序公钥并写注册机" class="headerlink" title="0x3 替换原程序公钥并写注册机"></a>0x3 替换原程序公钥并写注册机</h2><p>替换了一原本的公钥字符串到我自己用openssl工具生成的公钥</p>
+<p><del>考虑了一下就去patch Markdown.Async</del></p>
+<p><del>## 0x3 替换原程序公钥并写注册机</del></p>
+<h2 id="0x3-书写注册机"><a href="#0x3-书写注册机" class="headerlink" title="0x3 书写注册机"></a>0x3 书写注册机</h2><p><del>替换了一原本的公钥字符串到我自己用openssl工具生成的公钥</del></p>
+<p>百度搜索到了私钥</p>
 <p>接下来写Keygen</p>
 <p>关键代码:</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">License</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">string</span> _Product;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">string</span> _Name;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> _LicenseTypeId;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">string</span> _Email;</div><div class="line">    <span class="keyword">private</span> DateTime _CreationDate;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> DateTime CreationDate</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">get</span>&#123; <span class="keyword">return</span> _CreationDate; &#125;</div><div class="line">        <span class="keyword">set</span>&#123; _CreationDate = <span class="keyword">value</span>; &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Email</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">get</span>&#123; <span class="keyword">return</span> _Email; &#125;</div><div class="line">        <span class="keyword">set</span>&#123; _Email = <span class="keyword">value</span>; &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">int</span> LicenseTypeId</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">get</span>&#123; <span class="keyword">return</span> _LicenseTypeId; &#125;</div><div class="line">        <span class="keyword">set</span>&#123; _LicenseTypeId = <span class="keyword">value</span>; &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Name</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">get</span>&#123; <span class="keyword">return</span> _Name; &#125;</div><div class="line">        <span class="keyword">set</span>&#123; _Name = <span class="keyword">value</span>; &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Product</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">get</span>&#123; <span class="keyword">return</span> _Product; &#125;</div><div class="line">        <span class="keyword">set</span>&#123; _Product = <span class="keyword">value</span>; &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
