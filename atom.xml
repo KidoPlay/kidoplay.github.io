@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.kidoplay.com/"/>
-  <updated>2016-10-10T06:49:10.913Z</updated>
+  <updated>2016-10-10T07:17:43.621Z</updated>
   <id>http://blog.kidoplay.com/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="http://blog.kidoplay.com/2016/10/10/MarkdownPad-2-Pro-%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95/"/>
     <id>http://blog.kidoplay.com/2016/10/10/MarkdownPad-2-Pro-破解记录/</id>
     <published>2016-10-09T21:44:06.000Z</published>
-    <updated>2016-10-10T06:49:10.913Z</updated>
+    <updated>2016-10-10T07:17:43.621Z</updated>
     
     <content type="html"><![CDATA[<h2 id="0x0-前言"><a href="#0x0-前言" class="headerlink" title="0x0 前言"></a>0x0 前言</h2><p>为了现在这个破博客，找了一天的win下可视化MD编辑器，终于在知乎提示下找到一个看起来不错的，也就是MarkdownPad。</p>
 <p>去官网看了一下，有两个版本。</p>
 <p>免费版和收费版相比，没有自动保存，最多只能打开4个文档，而且限制了视图方式等等。</p>
 <p>那就开动一下，搞掉他。</p>
+<a id="more"></a>
 <h2 id="0x1-基础分析"><a href="#0x1-基础分析" class="headerlink" title="0x1 基础分析"></a>0x1 基础分析</h2><p>首先到软件目录</p>
 <p>明显的C#程序</p>
 <p><img src="http://i.imgur.com/umlBhNP.png" alt=""></p>
@@ -71,14 +72,17 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;0x0-前言&quot;&gt;&lt;a href=&quot;#0x0-前言&quot; class=&quot;headerlink&quot; title=&quot;0x0 前言&quot;&gt;&lt;/a&gt;0x0 前言&lt;/h2&gt;&lt;p&gt;为了现在这个破博客，找了一天的win下可视化MD编辑器，终于在知乎提示下找到一个看起来不错的，也就是Mark
+      &lt;h2 id=&quot;0x0-前言&quot;&gt;&lt;a href=&quot;#0x0-前言&quot; class=&quot;headerlink&quot; title=&quot;0x0 前言&quot;&gt;&lt;/a&gt;0x0 前言&lt;/h2&gt;&lt;p&gt;为了现在这个破博客，找了一天的win下可视化MD编辑器，终于在知乎提示下找到一个看起来不错的，也就是MarkdownPad。&lt;/p&gt;
+&lt;p&gt;去官网看了一下，有两个版本。&lt;/p&gt;
+&lt;p&gt;免费版和收费版相比，没有自动保存，最多只能打开4个文档，而且限制了视图方式等等。&lt;/p&gt;
+&lt;p&gt;那就开动一下，搞掉他。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://blog.kidoplay.com/tags/CSharp/"/>
-    
       <category term="RCE" scheme="http://blog.kidoplay.com/tags/RCE/"/>
+    
+      <category term="CSharp" scheme="http://blog.kidoplay.com/tags/CSharp/"/>
     
   </entry>
   
